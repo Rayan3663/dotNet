@@ -1,0 +1,39 @@
+﻿@model List<FirstApp.Models.Category>//IEnumerable<Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index of the category</h1><br>
+<h1>@Model</h1>
+<br>
+
+<button><a asp-controller="Category" asp-action="Create">Add new Category</a></button>
+
+<table>
+    <thead style="color : red; background-color : floralwhite">
+    <tr>
+    <th>Name</th>
+    <th>Display Order</th>
+    </tr>
+    </thead>
+
+    <tbody>
+
+    @foreach(var l1 in Model)
+    {
+            <tr>
+            <td>
+                @l1.Name
+            </td>
+
+            <td>
+                @l1.DisplayOrder
+            </td>
+        </tr>
+    }
+
+    </tbody>
+</table>
+
+

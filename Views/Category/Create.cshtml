@@ -1,0 +1,22 @@
+﻿@model Category
+
+
+
+<form method="post" action="/Category/Update">
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        
+
+        <label>DisplayOrder</label>
+        <input asp-for="DisplayOrder" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+
+    </div>
+   
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script>
+    console.log("Hello world");
+</script>
